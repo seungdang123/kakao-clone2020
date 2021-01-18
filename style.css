@@ -1,0 +1,34 @@
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/alt-screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/red_dot.css";
+@import "components/icon-row.css";
+@import "components/no-mobile.css";
+
+/* Screens*/
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+body{
+    background-image: url("https://cdn.dribbble.com/users/726142/screenshots/2457750/snape.png?compress=1&resize=400x300");
+    color: #c0c7ce;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.main-screen{
+    padding: 0px var(--horizontal-space);
+}

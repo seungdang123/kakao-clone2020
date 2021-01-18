@@ -1,0 +1,10 @@
+.red_dot{
+    display: flex;
+    width: 5px;
+    height: 5px;
+    background-color: tomato;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    border-radius: 50%;
+}

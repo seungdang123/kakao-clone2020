@@ -1,0 +1,24 @@
+#no-mobile{
+    position: absolute;
+    z-index: 10000;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://wallpapercave.com/wp/4NwstUc.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    top: 0;
+}
+
+@media screen and (max-width:540px){
+    #no-mobile{
+        display: none;
+    }
+}
+
+
+/* #no-landscape */
