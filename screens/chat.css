@@ -54,7 +54,9 @@
     width: 100%;
     display: flex;
     margin-bottom: 25px;
+    opacity: 0;
 }
+
 
 .message-row img{
     width: 50px;
@@ -90,7 +92,7 @@
 }
 
 .message-row--own{
-    justify-content: flex-end;
+    justify-content: flex-end;    opacity: 0;
 }
 
 .message-row--own .message__bubble{
@@ -188,5 +190,48 @@
     transform: translateY(80px);
 }
 
+@keyframes delayMessage {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.to-voldemort img,
+.message__info>img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+
+.to-voldemort:nth-child(2),
+.from-hermione:nth-child(2),
+.dumbledore-reply,
+.to-potter{
+    animation: delayMessage 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+.to-voldemort:nth-child(3){
+
+    animation: delayMessage 1s ease-in-out forwards;
+    animation-delay: 3.5s;
+}
+
+.dumbledore-reply:nth-child(3),
+.from-hermione:nth-child(3),
+.potter-reply{
+    animation: delayMessage 1s ease-in-out forwards;
+    animation-delay: 4s;
+}
+
+.to-dumbledore:last-child,
+.with-voldemort{
+    animation: delayMessage 1s ease-in-out forwards;
+    animation-delay: 5s;
+}
 
 
